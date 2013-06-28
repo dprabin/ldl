@@ -1,0 +1,51 @@
+
+select 
+   b.id,b.title as book,
+   group_concat(distinct a.name separator ' | ') as authors, 
+   p.name as publisher,
+   MAX(CASE WHEN i.type = 'isbn' THEN i.val END) AS isbn,
+   MAX(CASE WHEN i.type = 'lccn' THEN i.val END) AS lccn,
+   group_concat(distinct t.name separator ' | ') as tags,
+   d.uncompressed_size as size,concat(a.sort,'\\',d.name,'.',d.format) as filename,
+   s.name as series,
+   avg(r.rating) as rating,
+   c.text as comment,
+   c1.value as subject,
+   c2.value as usefulfor
+from books as b
+inner join books_authors_link as ba
+   on b.id=ba.book
+inner join authors as a
+   on a.id=ba.author
+left join books_publishers_link as bp
+   on b.id=bp.book
+left join publishers as p
+   on p.id=bp.publisher
+left join books_tags_link as bt
+   on b.id=bt.book
+left join tags as t
+   on t.id=bt.tag
+inner join data as d
+   on b.id=d.book
+left join books_series_link as bs
+   on b.id=bs.book
+left join series as s
+   on s.id=bs.series
+left join books_ratings_link as br
+   on b.id=br.book
+left join ratings as r
+   on r.id=br.rating
+left join comments as c
+   on b.id=c.book
+left join books_custom_column_1_link as cl1
+   on b.id=cl1.book
+left join custom_column_1 as c1
+   on c1.id=cl1.value
+left join books_custom_column_2_link as cl2
+   on b.id=cl2.book
+left join custom_column_2 as c2
+   on c2.id=cl2.value
+left join identifiers as i
+   on b.id=i.book
+group by b.id
+order by b.id

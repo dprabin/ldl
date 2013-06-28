@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="install">
+	<name>Show IP address of the client</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C)2012 Kalika Computers</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@kalika.com.np</authorEmail>
+	<authorUrl>www.kalika.com.np</authorUrl>
+	<version>1.1</version>
+	<description>A module showing the IP address and related information of the client in the browser</description>
+	<files>
+		<filename module="mod_showip">mod_showip.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_showip.xml</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="message"
+					type="text"
+					default=""
+					label="Message"
+					description="Message to display before IP address" />
+				<field
+					name="showip"
+					type="list"
+					default="1"
+					label="Show IP address"
+					description="Show the IP address" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="permitted_ip"
+					type="text"
+					default="127.0.0.1"
+					label="Permitted IP Address"
+					description="Permitted IP Address in the format xxx.xxx.xxx.xxx" />
+				<field
+					name="subnet_mask"
+					type="text"
+					default="255.255.255.0"
+					label="Subnet mask"
+					description="Subnet mask of the network" />
+				<field
+					name="user_id"
+					type="list"
+					default="298"
+					label="Defatul User id"
+					description="Default User Id to be loaded" >
+					<option	value="297">admin</option>
+					<option value="298">neditor</option>
+					<option value="299">premium</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
