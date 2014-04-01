@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">2058</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">0b561f6b-8bb0-479a-8d0a-2e722092f845</dc:identifier>
+        <dc:title>The Philosophical Computer: Exploratory Essays in Philosophical Computer Modeling</dc:title>
+        <dc:creator opf:file-as="Grim, Patrick &amp; Mar, Gary &amp; Denis, Paul St." opf:role="aut">Patrick Grim</dc:creator>
+        <dc:creator opf:file-as="Grim, Patrick &amp; Mar, Gary &amp; Denis, Paul St." opf:role="aut">Gary Mar</dc:creator>
+        <dc:creator opf:file-as="Grim, Patrick &amp; Mar, Gary &amp; Denis, Paul St." opf:role="aut">Paul St. Denis</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (0.8.38) [http://calibre-ebook.com]</dc:contributor>
+        <dc:date>1998-05-01T00:00:00+00:00</dc:date>
+        <dc:description>Philosophical modeling is as old as philosophy itself; examples range from Plato's Cave and the Divided Line to Rawls's original position. What is new are the astounding computational resources now available for philosophical modeling. Although the computer cannot offer a substitute for philosophical research, it can offer an important new environment for philosophical research.  The authors present a series of exploratory examples of computer modeling, using a range of computational techniques to illuminate a variety of questions in philosophy and philosophical logic. Topics include self-reference and paradox in fuzzy logics, varieties of epistemic chaos, fractal images of formal systems, and cellular automata models in game theory. Examples in the last category include models for the evolution of generosity, possible causes and cures for discrimination, and the formal undecidability of patterns of social and biological interaction.  The cross-platform CD-ROM provided with the book contains a variety of working examples, in color and often operating dynamically, embedded in a text that parallels that of the book. Source code of all major programs is included to facilitate further research.</dc:description>
+        <dc:publisher>MIT Press</dc:publisher>
+        <dc:identifier opf:scheme="GOOGLE">4r2ud5MXkosC</dc:identifier>
+        <dc:identifier opf:scheme="ISBN">9780262071857</dc:identifier>
+        <dc:language>eng</dc:language>
+        <dc:subject>Computers</dc:subject>
+        <dc:subject>Computer Science</dc:subject>
+        <meta content="{&quot;Paul St. Denis&quot;: &quot;&quot;, &quot;Gary Mar&quot;: &quot;&quot;, &quot;Patrick Grim&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+        <meta content="0" name="calibre:rating"/>
+        <meta content="2012-08-07T10:11:53+00:00" name="calibre:timestamp"/>
+        <meta content="Philosophical Computer: Exploratory Essays in Philosophical Computer Modeling, The" name="calibre:title_sort"/>
+        <meta name="calibre:user_metadata:#subject" content="{&quot;is_category&quot;: true, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 1, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 22, &quot;search_terms&quot;: [&quot;#subject&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {&quot;cache_to_list&quot;: &quot;|&quot;, &quot;list_to_ui&quot;: &quot;, &quot;, &quot;ui_to_list&quot;: &quot;,&quot;}, &quot;is_multiple&quot;: &quot;|&quot;, &quot;datatype&quot;: &quot;text&quot;, &quot;#value#&quot;: [], &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;subject&quot;, &quot;display&quot;: {&quot;is_names&quot;: false}, &quot;name&quot;: &quot;Subject&quot;}"/>
+    </metadata>
+    <guide>
+        <reference href="cover.jpg" type="cover" title="Cover"/>
+    </guide>
+</package>

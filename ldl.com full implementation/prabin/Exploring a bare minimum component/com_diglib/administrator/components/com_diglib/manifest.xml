@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" method="upgrade" version="1.7.0">
+	<name>com_diglib</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C) 2012</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@kalika.com.np</authorEmail>
+	<authorUrl>www.kalika.com.np</authorUrl>
+	<version>1.0</version>
+	<description>COM_EXPLORE_XML_DESCRIPTION</description>
+
+	<files folder="components/com_diglib">
+		<filename>explore.php</filename>
+		<filename>router.php</filename>
+		<filename>index.html</filename>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<administration>
+		<languages folder="administrator/language/en-GB">
+			<language
+				tag="en-GB">en-GB.com_diglib.sys.ini</language>
+		</languages>
+		<menu link="option=com_diglib">Libra Digital Library</menu>
+		<submenu>
+			<menu link="option=com_diglib&amp;view=books"
+				alt="COM_EXPLORE_CALIFORNIA_ACTIVITIES">Books</menu>
+			<menu link="option=com_diglib&amp;view=authors"
+				alt="COM_EXPLORE_CALIFORNIA_TOURS">Authors</menu>
+		</submenu>
+		<files folder="administrator/components/com_diglib">
+			<filename>explore.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>manifest.xml</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</install>

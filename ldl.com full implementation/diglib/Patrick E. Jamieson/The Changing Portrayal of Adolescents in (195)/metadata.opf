@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">195</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">64af2831-df3e-4f8a-b8cc-54682f29bb1f</dc:identifier>
+        <dc:title>The Changing Portrayal of Adolescents in the Media Since 1950</dc:title>
+        <dc:creator opf:file-as="Jamieson, Patrick E. &amp; Romer, Daniel" opf:role="aut">Patrick E. Jamieson</dc:creator>
+        <dc:creator opf:file-as="Jamieson, Patrick E. &amp; Romer, Daniel" opf:role="aut">Daniel Romer</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (0.8.38) [http://calibre-ebook.com]</dc:contributor>
+        <dc:date>2008-07-19T14:06:58+00:00</dc:date>
+        <dc:publisher>Oxford University Press</dc:publisher>
+        <dc:identifier opf:scheme="ISBN">9780198569220</dc:identifier>
+        <dc:language>eng</dc:language>
+        <meta content="{&quot;Patrick E. Jamieson&quot;: &quot;&quot;, &quot;Daniel Romer&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+        <meta content="0" name="calibre:rating"/>
+        <meta content="2012-07-19T14:06:58+00:00" name="calibre:timestamp"/>
+        <meta content="Changing Portrayal of Adolescents in the Media Since 1950, The" name="calibre:title_sort"/>
+        <meta name="calibre:user_metadata:#genere" content="{&quot;is_category&quot;: true, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 1, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 22, &quot;search_terms&quot;: [&quot;#genere&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {&quot;cache_to_list&quot;: &quot;|&quot;, &quot;list_to_ui&quot;: &quot;, &quot;, &quot;ui_to_list&quot;: &quot;,&quot;}, &quot;is_multiple&quot;: &quot;|&quot;, &quot;datatype&quot;: &quot;text&quot;, &quot;#value#&quot;: [], &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;genere&quot;, &quot;display&quot;: {&quot;is_names&quot;: false}, &quot;name&quot;: &quot;Genere&quot;}"/>
+    </metadata>
+    <guide>
+        <reference href="cover.jpg" type="cover" title="Cover"/>
+    </guide>
+</package>

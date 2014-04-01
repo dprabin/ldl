@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="install">
+	<name>Libra Digital Library</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C)2012 Kalika Computers</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@kalika.com.np</authorEmail>
+	<authorUrl>www.kalika.com.np</authorUrl>
+	<version>1.0</version>
+	<description>A module listing all of the Books, authors and other bibliographic information in Libra Digital Library</description>
+	<files>
+		<filename module="mod_diglib">mod_diglib.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_diglib.xml</filename>
+	</files>
+</extension>

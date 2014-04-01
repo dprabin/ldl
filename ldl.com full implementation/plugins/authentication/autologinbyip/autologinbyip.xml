@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	version="2.5" 
+	type="plugin" 
+	group="authentication" 
+	method="upgrade">
+	<name>Authentication Plugin - Auto Login by IP</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>(C) 2012 Prabhu Bhakta</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>joomla@kalika.com.np</authorEmail>
+	<authorUrl>http://www.kalika.com.np</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[
+<div style="background:#EFFFE5;border:1px solid #999;padding:10px;margin:10px;-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;-webkit-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;-moz-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;">
+<div><strong>Auto Login by IP</strong> - an authorisation plugin for Joomla! CMS V2.5.x.</div>
+<div>Authorises access as your chosen user ID, based on the incoming IP address.</div>
+<ul>
+<li>See this package on <a href="http://kalika.com.np/joomla/extensions" target="_blank" >Free Joomla Extensions</a>.</li>
+<li>More information: <a href="http://www.kalika.com.np/joomla/extensions/autologinbyip" target="_blank" >Auto Login By IP documentation page</a>.</li>
+<li>Please consider donating if you like to support future development.</li>
+</ul>
+</div>  
+	]]></description>
+	<files>
+		<filename plugin="autologinbyip">autologinbyip.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_authentication_autologinbyip.ini</language>
+		<language tag="en-GB">en-GB.plg_authentication_autologinbyip.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="allow_backend" type="radio"
+					default="0"
+					description="PLG_AUTHENTICATION_AUTOLOGINBYIP_BACKEND_DESC"
+					label="PLG_AUTHENTICATION_AUTOLOGINBYIP_BACKEND"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				
+				<field name="allow_opt_out" type="radio"
+					default="0"
+					description="PLG_AUTHENTICATION_AUTOLOGINBYIP_OPTOUT_DESC"
+					label="PLG_AUTHENTICATION_AUTOLOGINBYIP_OPTOUT"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

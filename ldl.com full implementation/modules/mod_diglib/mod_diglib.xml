@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="install">
+	<name>Libra Digital Library</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C)2014 Squad of Technical mind</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@stm.com.np</authorEmail>
+	<authorUrl>www.stm.com.np</authorUrl>
+	<version>1.1</version>
+	<description>A module listing latest Books and other bibliographic information in Libra Digital Library</description>
+	<files>
+		<filename module="mod_diglib">mod_diglib.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_diglib.xml</filename>
+	</files>
+	
+	
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="message"
+					type="text"
+					default=""
+					label="Message"
+					description="Message to display above activity list" />
+				<field
+					name="linked"
+					type="list"
+					default="1"
+					label="Linked"
+					description="Display the link of the book or not?" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="layout"
+					type="list"
+					default="default"
+					label="Layout"
+					description="Layout to use for displaying the List">
+					<option
+						value="default">Plain List</option>
+					<option
+						value="ordered">Ordered List</option>
+					<option
+						value="paragraphs">Paragraphs</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

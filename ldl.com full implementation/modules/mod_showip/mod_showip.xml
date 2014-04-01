@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="install">
+	<name>Show IP address of the client</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C)2012 Kalika Computers</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@kalika.com.np</authorEmail>
+	<authorUrl>www.kalika.com.np</authorUrl>
+	<version>1.1</version>
+	<description>A module showing the IP address and related information of the client in the browser</description>
+	<files>
+		<filename module="mod_showip">mod_showip.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_showip.xml</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="message"
+					type="text"
+					default=""
+					label="Message"
+					description="Message to display before IP address" />
+				<field
+					name="showip"
+					type="list"
+					default="1"
+					label="Show IP address"
+					description="Show the IP address" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="permitted_ip"
+					type="text"
+					default="127.0.0.1"
+					label="Permitted IP Address"
+					description="Permitted IP Address in the format xxx.xxx.xxx.xxx" />
+				<field
+					name="subnet_mask"
+					type="text"
+					default="255.255.255.0"
+					label="Subnet mask"
+					description="Subnet mask of the network" />
+				<field
+					name="user_id"
+					type="user"
+					default="298"
+					label="Defatul User"
+					description="Default User Id to be loaded" />
+				<field
+					name="allow_backend"
+					type="list"
+					default="1"
+					label="Allow backend"
+					description="Allow backend from this address" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+=				<field
+					name="show_host"
+					type="list"
+					default="1"
+					label="Show host"
+					description="Show the Host name of the machine." >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="user_agent"
+					type="list"
+					default="1"
+					label="Show User Agent"
+					description="Show the user agent through which the clint is connected eg Mozilla, chrome and their version" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="referer"
+					type="list"
+					default="1"
+					label="Show Referer"
+					description="Show the referer url from which this page was clicked" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="server_address"
+					type="list"
+					default="1"
+					label="Server IP address"
+					description="Show the IP address of the server" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="server_port"
+					type="list"
+					default="1"
+					label="Server Port"
+					description="The port number to which the computer is connected" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="server_name"
+					type="list"
+					default="1"
+					label="Server Name"
+					description="Name of the server" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="server_software"
+					type="list"
+					default="1"
+					label="Server Software"
+					description="The Software that the server uses" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="server_admin"
+					type="list"
+					default="1"
+					label="Server Administrator"
+					description="Administrator email address of the server" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="remote_addr"
+					type="list"
+					default="1"
+					label="Remote address"
+					description="Remote IP address. This might be the client ip address, or Proxy ip address." >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="remote_port"
+					type="list"
+					default="1"
+					label="Remote Port number"
+					description="Port number to which the client is connected" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="request_uri"
+					type="list"
+					default="1"
+					label="Requested URI"
+					description="The URI requested by the client" >
+					<option	value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

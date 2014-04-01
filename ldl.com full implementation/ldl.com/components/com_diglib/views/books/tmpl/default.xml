@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DIGLIB_BOOKS_VIEW_DEFAULT_TITLE">
+		<message>
+			COM_DIGLIB_BOOKS_VIEW_DEFAULT_DESC
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="books"
+			label="COM_CONFIG_BOOKS_FIELDSET_LABEL">
+			<field
+				name="list_style"
+				type="list"
+				default=""
+				label="COM_CONFIG_LIST_STYLE_LABEL"
+				description="COM_CONFIG_LIST_STYLE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="divs">COM_DIGLIB_FIELD_VALUE_DIVS</option>
+				<option value="list">COM_DIGLIB_FIELD_VALUE_LIST</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">1097</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">c5769efe-83ed-49a1-8bef-543ffdcf4660</dc:identifier>
+        <dc:title>Kierkegaard</dc:title>
+        <dc:creator opf:file-as="Gardiner, Patrick" opf:role="aut">Patrick Gardiner</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (0.8.38) [http://calibre-ebook.com]</dc:contributor>
+        <dc:date>1988-01-02T00:00:00+00:00</dc:date>
+        <dc:description>&lt;h3&gt;Review&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Review from previous edition:&lt;/em&gt; "Patrick Gardiner's beautifully written &lt;em&gt;Kierkegaard&lt;/em&gt; makes him come alive both as a thinker and as a human being."--&lt;em&gt;Independent&lt;/em&gt;&lt;/p&gt;&lt;p&gt;"Marvellously lucid and readable book."--E. Pivcevic, University of Bristol&lt;/p&gt;&lt;h3&gt;About the Author&lt;/h3&gt;&lt;p&gt;Patrick Gardiner was formerly an Emeritus Professor of Magdalen College, Oxford&lt;br /&gt;&lt;/p&gt;</dc:description>
+        <dc:publisher>Herder</dc:publisher>
+        <dc:identifier opf:scheme="AMAZON">0192802569</dc:identifier>
+        <dc:identifier opf:scheme="GOOGLE">VMxJPgAACAAJ</dc:identifier>
+        <dc:identifier opf:scheme="ISBN">9783451048487</dc:identifier>
+        <dc:language>por</dc:language>
+        <meta content="{&quot;Patrick Gardiner&quot;: &quot;&quot;}" name="calibre:author_link_map"/>
+        <meta content="6" name="calibre:rating"/>
+        <meta content="2012-07-30T09:57:42+00:00" name="calibre:timestamp"/>
+        <meta content="Kierkegaard" name="calibre:title_sort"/>
+        <meta name="calibre:user_metadata:#subject" content="{&quot;is_category&quot;: true, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 1, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 22, &quot;search_terms&quot;: [&quot;#subject&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {&quot;cache_to_list&quot;: &quot;|&quot;, &quot;list_to_ui&quot;: &quot;, &quot;, &quot;ui_to_list&quot;: &quot;,&quot;}, &quot;is_multiple&quot;: &quot;|&quot;, &quot;datatype&quot;: &quot;text&quot;, &quot;#value#&quot;: [], &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;subject&quot;, &quot;display&quot;: {&quot;is_names&quot;: false}, &quot;name&quot;: &quot;Subject&quot;}"/>
+    </metadata>
+    <guide>
+        <reference href="cover.jpg" type="cover" title="Cover"/>
+    </guide>
+</package>

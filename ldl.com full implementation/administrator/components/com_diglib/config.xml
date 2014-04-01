@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="authors"
+		label="COM_CONFIG_AUTHORS_FIELDSET_LABEL"
+		description="COM_CONFIG_AUTHORS_FIELDSET_DESC">
+
+		<field
+			name="show_books"
+			type="radio"
+			default="0"
+			label="COM_CONFIG_SHOW_AUTHORS_LABEL"
+			description="COM_CONFIG_SHOW_AUTHORS_DESC">
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+		</field>
+		<field
+			name="show_book_count"
+			type="radio"
+			default="0"
+			label="COM_CONFIG_SHOW_AUTHORS_BOOK_COUNT_LABEL"
+			description="COM_CONFIG_SHOW_AUTHORS_BOOK_COUNT_DESC">
+			<option
+				value="0">JHIDE</option>
+			<option
+				value="1">JSHOW</option>
+		</field>
+	</fieldset>
+	<fieldset
+		name="books"
+		label="COM_CONFIG_BOOKS_FIELDSET_LABEL"
+		description="COM_CONFIG_BOOKS_FIELDSET_DESC">
+
+		<field
+			name="list_style"
+			type="list"
+			default="divs"
+			label="COM_CONFIG_LIST_STYLE_LABEL"
+			description="COM_CONFIG_LIST_STYLE_DESC">
+			<option
+				value="divs">COM_DIGLIB_FIELD_VALUE_DIVS</option>
+			<option
+				value="list">COM_DIGLIB_FIELD_VALUE_LIST</option>
+		</field>
+	</fieldset>
+</config>

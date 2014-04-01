@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="essential">
+		<field name="id"
+			type="hidden"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+
+		<field name="title"
+			type="text"
+			label="COM_DIGLIB_FIELD_BOOK_NAME_LABEL"
+			description="COM_DIGLIB_FIELD_BOOK_NAME_DESC"
+			class="inputbox"
+			size="100"
+			required="true"
+		/>		
+	</fieldset>
+	
+	<fieldset name="optional">
+		
+		<field name="pubdate"
+			type="text"
+			label="COM_DIGLIB_FIELD_PUBDATE_LABEL"
+			description="COM_DIGLIB_PUBDATE_LABEL_DESC"
+			class="inputbox"
+			filter="intval"
+			size="30"
+			required="false"
+		/>
+			<field name="author_sort"
+			type="text"
+			label="COM_DIGLIB_FIELD_AUTHOR_SORT_LABEL"
+			description="COM_DIGLIB_AUTHOR_SORT_LABEL_DESC"
+			class="inputbox"
+			filter="intval"
+			size="75"
+			required="false"
+		/>
+		<field name="path"
+			type="text"
+			label="COM_DIGLIB_FIELD_PATH_LABEL"
+			description="COM_DIGLIB_PATH_LABEL_DESC"
+			class="inputbox"
+			filter="intval"
+			size="75"
+			required="false"
+		/>
+		<field name="flags"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			filter="intval"
+			size="1"
+			default="1"
+			required="false"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+		
+		<field name="book_access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			default="1"
+			required="false"
+		 />
+	</fieldset>
+		
+	<fieldset name="editor">
+		<field name="sort"
+			type="editor"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			filter="safehtml"
+			class="inputbox"
+			required="false"
+		 />
+
+	</fieldset>
+</form>

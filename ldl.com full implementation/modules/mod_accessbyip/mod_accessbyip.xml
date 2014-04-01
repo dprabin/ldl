@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Login (for use with AccessByIP)</name>
+	<author>James Brice</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2012.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>joomla_stuff@jamesbrice.com</authorEmail>
+	<authorUrl>http://www.jamesbrice.com/articles/joomla-secrets</authorUrl>
+	<version>1.0</version>
+	<description>
+	<![CDATA[
+<div style="background:#EFFFE5;border:1px solid #999;padding:10px;margin:10px;-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;-webkit-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;-moz-box-shadow: inset 0px 0px 10px #fff, 0px 0px 5px #ccc;">
+<div>mod_accesbyip - login module (based on mod_login) to support the AccessByIP authorisation plugin for Joomla! CMS V2.5.x.<br />
+Displays a login button without having to show User ID and Password form fields.</div>
+<ul>
+<li>More information: <a href="http://www.jamesbrice.com/articles/joomla-secrets/86-accessbyip-extension" target="_blank" >AccessByIP documentation page</a>.</li>
+<li>Something to say about this extension? <a href="http://extensions.joomla.org/extensions/access-a-security/site-access/authentication/21087/review" target="_blank" >Review it here</a>.</li>
+<li>Download (and donate to support future development) <a href="http://www.jamesbrice.com/accessbyip-extension-download" target="_blank" >here</a>.</li>
+</ul>
+</div>  
+    ]]>
+	</description>
+	<files>
+		<filename module="mod_accessbyip">mod_accessbyip.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+	      <language tag="en-GB">en-GB.mod_accessbyip.ini</language>
+	      <language tag="en-GB">en-GB.mod_accessbyip.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="pretext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_ACCESSBYIP_FIELD_PRE_TEXT_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_PRE_TEXT_DESC" />
+				<field
+					name="posttext"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_ACCESSBYIP_FIELD_POST_TEXT_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_POST_TEXT_DESC" />
+				<field
+					name="login"
+					type="menuitem"
+					disable="separator"
+					label="MOD_ACCESSBYIP_FIELD_ACCESSBYIP_REDIRECTURL_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_ACCESSBYIP_REDIRECTURL_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="logout"
+					type="menuitem"
+					disable="separator"
+					label="MOD_ACCESSBYIP_FIELD_LOGOUT_REDIRECTURL_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_LOGOUT_REDIRECTURL_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="greeting"
+					type="radio"
+					default="1"
+					label="MOD_ACCESSBYIP_FIELD_GREETING_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_GREETING_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="name"
+					type="list"
+					default="0"
+					label="MOD_ACCESSBYIP_FIELD_NAME_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_NAME_DESC">
+					<option
+						value="0">MOD_ACCESSBYIP_VALUE_NAME</option>
+					<option
+						value="1">MOD_ACCESSBYIP_VALUE_USERNAME</option>
+				</field>
+				<field
+					name="usesecure"
+					type="radio"
+					default="0"
+					label="MOD_ACCESSBYIP_FIELD_USESECURE_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_USESECURE_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="hide_normal_login"
+					type="radio"
+					default="0"
+					label="MOD_ACCESSBYIP_FIELD_HIDENORMAL_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_HIDENORMAL_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="autologin" label="MOD_ACCESSBYIP_FIELDSET_LABEL">
+				<field
+					name="auto_button_label"
+					type="text"
+					size="20"
+					default="Auto-Login"
+					label="MOD_ACCESSBYIP_AUTOBUTTON_LABEL"
+					description="MOD_ACCESSBYIP_AUTOBUTTON_DESC" />
+				<field
+					name="autologin_text"
+					type="textarea"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					label="MOD_ACCESSBYIP_FIELD_AUTOLOGIN_TEXT_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_AUTOLOGIN_TEXT_DESC" />
+				<field
+					name="autologin"
+					type="menuitem"
+					disable="separator"
+					label="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_REDIRECTURL_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_REDIRECTURL_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				<field
+					name="autologin_by_username"
+					type="radio"
+					default="0"
+					label="MOD_ACCESSBYIP_FIELD_AUITOLOGINBYUNAME_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_AUITOLOGINBYUNAME_DESC">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field 
+					name="autologin_user" 
+					default="" 
+					type="user" 
+					size="20" 
+					label="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_AUTOLOGUNAME_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_AUTOLOGUNAME_DESC"/>
+					<option
+						value="">JDEFAULT
+					</option>
+				<field
+					name="autologin_pword"
+					type="password"
+					size='24'
+					filter="password"
+					default="$N{2{QQK>T,\pZa^%|[^!1+zS"
+					label="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_PWORD_LABEL"
+					description="MOD_ACCESSBYIP_FIELD_LOGIN_AUTOLOG_PWORD_DESC" >
+					<option
+						value="">JDEFAULT</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

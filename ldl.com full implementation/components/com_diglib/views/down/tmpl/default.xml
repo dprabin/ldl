@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DIGLIB_DOWNLOAD_VIEW_DEFAULT_TITLE">
+		<message>
+			COM_DIGLIB_DOWNLOAD_VIEW_DEFAULT_DESC
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="dl"
+			label="COM_CONFIG_DOWNLOAD_FIELDSET_LABEL">
+			<field
+				name="show_books"
+				type="radio"
+				default="0"
+				label="COM_CONFIG_SHOW_DOWNLOAD_MESSAGE"
+				description="COM_CONFIG_SHOW_DOWNLOAD_DESC">
+				<option
+					value="0">JHIDE</option>
+				<option
+					value="1">JSHOW</option>
+			</field>
+			<field
+				name="dl_count"
+				type="radio"
+				default="0"
+				label="COM_CONFIG_SHOW_DOWNLOAD_BOOK_COUNT_LABEL"
+				description="COM_CONFIG_SHOW_DOWNLOAD_BOOK_COUNT_DESC">
+				<option
+					value="0">JHIDE</option>
+				<option
+					value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,16 @@
+.book{
+	overflow:auto;
+	margin-bottom:10px;
+	display:block;
+}
+.book_title{
+	display:inline;
+	overflow:hide;
+
+	font-weight:bold;
+}
+.book_authors, .book_publishers, .book_isbn, .book_lccn , .book_tags, .book_series, .book_ratings, .book_subjects, .book_usefuls{
+	display:inline;
+	overflow:auto;
+	font-weight:normal;
+}

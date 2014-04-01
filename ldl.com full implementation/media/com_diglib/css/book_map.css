@@ -1,0 +1,48 @@
+#book_map {
+	height: 350px;
+	width: 350px;
+}
+
+#book_left {
+	float: left;
+	width: 325px;
+	height: 100%;
+}
+
+#book_right {
+	float: right;
+	width: 350px;
+	height: 100%;
+}
+
+#book_footer {
+	clear: both;
+}
+
+#book dl dt {
+	font-weight: bold;
+	width: 100px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#book dl dd {
+	clear: right;
+	margin-bottom: 10px;
+}
+
+#favorite {
+	font-size: 2em;
+	padding-right: 5px;
+	cursor: pointer;
+	text-shadow: 0.05em 0.05em 0.05em #222;
+	display: inline-block;
+}
+
+.favorite_inactive {
+	color: #DDD;
+}
+
+.favorite_active {
+	color: #FC3;
+}

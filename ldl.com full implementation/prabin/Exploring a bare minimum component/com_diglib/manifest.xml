@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" method="upgrade" version="1.7.0">
+	<name>com_diglib</name>
+	<author>Prabhu Bhakta</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Copyright (C) 2012</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>dprabin@kalika.com.np</authorEmail>
+	<authorUrl>www.kalika.com.np</authorUrl>
+	<version>1.0</version>
+	<description>Brings you the contents of digital library contents.</description>
+
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.com_diglib.ini</language>
+	</languages>
+
+	<files folder="components/com_diglib">
+		<filename>diglib.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<languages folder="administrator/language/en-GB">
+			<language tag="en-GB">en-GB.com_diglib.sys.ini</language>
+			<language tag="en-GB">en-GB.com_diglib.ini</language>
+		</languages>
+		<menu link="option=com_diglib">Libra Diglib</menu>
+		<submenu>
+			<menu link="option=com_diglib&amp;view=books"
+				alt="Manage Books in Libra Digital Library">Books</menu>
+			<menu link="option=com_diglib&amp;view=authors"
+				alt="Manage Authors in Libra Digital Library">Authors</menu>
+		</submenu>
+		<files folder="administrator/components/com_diglib">
+			<filename>diglib.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>manifest.xml</filename>
+			<filename>uninstall.mysql.sql</filename>
+		</files>
+	</administration>
+</install>
